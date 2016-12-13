@@ -3,12 +3,52 @@
   <head>
     <title>Resturant</title>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="nav-links">
+        <nav aria-label="...">
+          <ul class="pager">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Reservation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class='container mid'>
+    <div id="caro" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://lorempixel.com/g/1000/400/food" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://lorempixel.com/g/1000/400/food" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://lorempixel.com/g/1000/400/food" alt="">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 
   <body>
     <%= yield %>
